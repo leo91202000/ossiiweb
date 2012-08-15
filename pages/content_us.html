@@ -1,0 +1,40 @@
+<i class="icon-chevron-right"></i>
+<h3>聯絡我們</h3>
+<hr>
+<br>
+<h4>若您想要得到進一步的相關資訊，請由以下幾個方式聯絡我們，我們將會盡快為您服務!!</h4>                          
+<abbr title="Phone"><p>TEL:(02)2799-0696</p></abbr>                    
+<p>FAX:(02)2799-0579</p>                          
+<p>地址:台北市內湖區陽光街321巷8號10樓</p>
+
+<br>
+<i class="icon-envelope"></i>
+<a href="mailto:service@ossii.com.tw" target="_blank">技術請洽詢</a>
+<br>
+<br>
+<i class="icon-envelope"></i>
+<a href="mailto:sales@ossii.com.tw" target="_blank">業務請洽詢</a>
+<br>
+<br>
+<script>
+    $(function () {
+        var latlng = new google.maps.LatLng(25.07300, 121.57880);//座標
+        var mapOptions = {
+            zoom: 16, //初始放大倍數
+            center: latlng, //中心點所在位置
+            mapTypeId: google.maps.MapTypeId.ROADMAP //正常2D道路模式
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: latlng, //經緯度
+            title: "晟鑫科技股份有限公司", //顯示文字
+            map: map //指定要放置的地圖對象
+        });
+    });
+</script>
+<div id="map_canvas" style="width:650px; height:500px;"></div>
+<h3>相關服務諮詢</h3>
+<hr>
+
+
+    
